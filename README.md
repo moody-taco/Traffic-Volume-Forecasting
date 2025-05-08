@@ -9,6 +9,14 @@ This project evaluates the performance of four deep learning models — **Simple
 
 ---
 
+## 🗃️ Dataset
+
+- **Source**: [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Metro+Interstate+Traffic+Volume)
+- **Samples**: ~48,000 hourly records
+- **Features**: Temperature, rain, snow, cloud cover, hour, and more
+
+---
+
 ## 🧠 Models Compared
 
 | Model       | Description                                         |
@@ -17,6 +25,26 @@ This project evaluates the performance of four deep learning models — **Simple
 | LSTM        | Gated recurrent model with long-term memory         |
 | GRU         | Lightweight gated model, faster training            |
 | TCN         | Temporal Convolutional Network with dilated 1D conv |
+
+---
+
+## ⚙️ Technical Setup
+
+- **Input Sequence**: 24 hours
+- **Task**: Forecast next-hour traffic volume
+- **Framework**: PyTorch
+- **Training Split**: 80/20 train/test
+
+---
+
+## 📦 How to Run
+
+```bash
+git clone https://github.com/moody-taco/Traffic-Volume-Forecasting
+cd traffic-volume-prediction
+pip install -r requirements.txt
+python notebook.ipynb  # or run all cells in Jupyter
+```
 
 ---
 
@@ -42,34 +70,6 @@ This project evaluates the performance of four deep learning models — **Simple
 
 ### 🔸 Combined Prediction Overlay  
 ![Overlay Comparison](./assets/prediction_combined.png)
-
----
-
-## 🗃️ Dataset
-
-- **Source**: [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Metro+Interstate+Traffic+Volume)
-- **Samples**: ~48,000 hourly records
-- **Features**: Temperature, rain, snow, cloud cover, hour, and more
-
----
-
-## ⚙️ Technical Setup
-
-- **Input Sequence**: 24 hours
-- **Task**: Forecast next-hour traffic volume
-- **Framework**: PyTorch
-- **Training Split**: 80/20 train/test
-
----
-
-## 📦 How to Run
-
-```bash
-git clone https://github.com/moody-taco/Traffic-Volume-Forecasting
-cd traffic-volume-prediction
-pip install -r requirements.txt
-python notebook.ipynb  # or run all cells in Jupyter
-```
 
 ---
 
